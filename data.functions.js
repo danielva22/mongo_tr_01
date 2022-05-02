@@ -34,6 +34,14 @@ const crear_bebidas = async (req, res) => {
         { nombre: 'bebida', tipo: 'whisky'},
         { nombre: 'bebida', tipo: 'bourbon'}
     ]
+    for(let idx = 0; idx < bebidas.length; idx++) {
+        const bebida = bebidas[idx]
+        const bebida_nueva = new mBebidas(bebida)
+        await bebida_nueva.save()
+    }
+
+    res.send('ok')
 }
 
 exports.crear_locales = crear_locales
+exports.crear_bebidas = crear_bebidas
