@@ -24,15 +24,15 @@ const crear_locales = async (req, res) => {
 const crear_bebidas = async (req, res) => {
 
     const bebidas = [
-        { nombre: 'bebida', tipo: 'cerveza'},
-        { nombre: 'bebida', tipo: 'cachaça'},
-        { nombre: 'bebida', tipo: 'absenta'},
-        { nombre: 'bebida', tipo: 'ron'},
-        { nombre: 'bebida', tipo: 'tequila'},
-        { nombre: 'bebida', tipo: 'vodka'},
-        { nombre: 'bebida', tipo: 'ginebra'},
-        { nombre: 'bebida', tipo: 'whisky'},
-        { nombre: 'bebida', tipo: 'bourbon'}
+        { nombre: 'bebida1', tipo: 'cerveza'},
+        { nombre: 'bebida2', tipo: 'cachaça'},
+        { nombre: 'bebida3', tipo: 'absenta'},
+        { nombre: 'bebida4', tipo: 'ron'},
+        { nombre: 'bebida5', tipo: 'tequila'},
+        { nombre: 'bebida6', tipo: 'vodka'},
+        { nombre: 'bebida7', tipo: 'ginebra'},
+        { nombre: 'bebida8', tipo: 'whisky'},
+        { nombre: 'bebida9', tipo: 'bourbon'}
     ]
     for(let idx = 0; idx < bebidas.length; idx++) {
         const bebida = bebidas[idx]
